@@ -1,0 +1,10 @@
+title: Short Scoop
+author: 
+description:
+
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
+exclude: 
+plugins:
