@@ -8,3 +8,7 @@ kramdown:
       disable : true
 exclude: 
 plugins:
+collections:
+   pages:
+      output: true
+      permalink: /:name
