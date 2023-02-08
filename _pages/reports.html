@@ -5,57 +5,63 @@ layout: default
 <h1>Short Seller Reports</h1>
 
 <!-- Add the filter controls -->
-<div class="filter-controls">
-    <h4>Filter reports by:</h4>
-    <fieldset data-filter-group="" class="">
-        <select id="filter-fund">
-            <option value="">All</option>
-            <option value="">All Funds</option>
-            <option value=".Carl-Icahn">Carl Icahn</option>
-        </select>
-    </fieldset>
-    <fieldset data-filter-group="" class="">
-        <select id="filter-sector">
-          <option value="">All Industry Sectors</option>
-          <option value=".Consumer">Consumer</option>
-          <option value=".Financials">Financials</option>
-          <option value=".Healthcare">Healthcare</option>
-          <option value=".Industrials">Industrials</option>
-          <option value=".Multiple">Multiple</option>
-          <option value=".Natural-Resources">Natural Resources</option>
-          <option value=".Real-Estate">Real Estate</option>
-          <option value=".TMT">TMT</option>
-        </select>
-      </fieldset>
-      <fieldset data-filter-group="" class="">
-        <select id="filter-date">
-          <option value="">All Presentation Years</option>
-          <option value=".year-2023">2023</option>
-          <option value=".year-2022">2022</option>
-          <option value=".year-2021">2021</option>
-          <option value=".year-2020">2020</option>
-          <option value=".year-2019">2019</option>
-          <option value=".year-2018">2018</option>
-          <option value=".year-2017">2017</option>
-          <option value=".year-2016">2016</option>
-          <option value=".year-2015">2015</option>
-          <option value=".year-2014">2014</option>
-          <option value=".year-2013">2013</option>
-          <option value=".year-2012">2012</option>
-          <option value=".year-2011">2011</option>
-          <option value=".year-2010">2010</option>
-          <option value=".year-2009">2009</option>
-          <option value=".year-2008">2008</option>
-          <option value=".year-2007">2007</option>
-          <option value=".year-2006">2006</option>
-          <option value=".year-2005">2005</option>
-          <option value=".year-2004">2004</option>
-          <option value=".year-2003">2003</option>
-          <option value=".year-2002">2002</option>
-        </select>
-    </fieldset>
-    <button type="reset" class="hidden button control control-text">Reset</button>
-</div>
+
+<h4>Filter reports by:</h4>
+<form>
+    <div class="row">
+        <div class="col">
+            <fieldset data-filter-group="" class="">
+                <select id="filter-fund">
+                    <option value="">All Funds</option>
+                    <option value=".Carl-Icahn">Carl Icahn</option>
+                </select>
+            </fieldset>
+        </div>
+        <div class="col">
+            <fieldset data-filter-group="" class="">
+                <select id="filter-sector">
+                <option value="">All Industry Sectors</option>
+                <option value=".Consumer">Consumer</option>
+                <option value=".Financials">Financials</option>
+                <option value=".Healthcare">Healthcare</option>
+                <option value=".Industrials">Industrials</option>
+                <option value=".Multiple">Multiple</option>
+                <option value=".Natural-Resources">Natural Resources</option>
+                <option value=".Real-Estate">Real Estate</option>
+                <option value=".TMT">TMT</option>
+                </select>
+            </fieldset>
+        </div>
+        <div class="col">
+            <select id="filter-date">
+                <option value="">All Presentation Years</option>
+                <option value=".year-2023">2023</option>
+                <option value=".year-2022">2022</option>
+                <option value=".year-2021">2021</option>
+                <option value=".year-2020">2020</option>
+                <option value=".year-2019">2019</option>
+                <option value=".year-2018">2018</option>
+                <option value=".year-2017">2017</option>
+                <option value=".year-2016">2016</option>
+                <option value=".year-2015">2015</option>
+                <option value=".year-2014">2014</option>
+                <option value=".year-2013">2013</option>
+                <option value=".year-2012">2012</option>
+                <option value=".year-2011">2011</option>
+                <option value=".year-2010">2010</option>
+                <option value=".year-2009">2009</option>
+                <option value=".year-2008">2008</option>
+                <option value=".year-2007">2007</option>
+                <option value=".year-2006">2006</option>
+                <option value=".year-2005">2005</option>
+                <option value=".year-2004">2004</option>
+                <option value=".year-2003">2003</option>
+                <option value=".year-2002">2002</option>
+            </select>
+        </div>
+    </div>
+</form>
+<button type="reset">Reset</button>
 
 
 
