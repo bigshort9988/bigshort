@@ -13,7 +13,8 @@ layout: default
         </div>
         <div class="col">
             <fieldset data-filter-group="" class="">
-                <select id="filter-fund">
+            <button class="btn btn-primary " type="reset">Reset</button>
+                <select class="form-select" multiple id="filter-fund">
                     <option value="">All Funds</option>
                     <option value=".Carl-Icahn">Carl Icahn</option>
                 </select>
@@ -21,7 +22,7 @@ layout: default
         </div>
         <div class="col">
             <fieldset data-filter-group="" class="">
-                <select id="filter-sector">
+                <select class="form-select" multiple id="filter-sector">
                 <option value="">All Industry Sectors</option>
                 <option value=".Consumer">Consumer</option>
                 <option value=".Financials">Financials</option>
@@ -35,7 +36,7 @@ layout: default
             </fieldset>
         </div>
         <div class="col">
-            <select id="filter-date">
+            <select class="form-select" multiple id="filter-date">
                 <option value="">All Presentation Years</option>
                 <option value=".year-2023">2023</option>
                 <option value=".year-2022">2022</option>
@@ -70,9 +71,8 @@ layout: default
 <!------------- End Filtering ------------------>
 
 
-  <div class="container">
-      <div class="row">
-
+<div class="container">
+    <div class="row">
         <div class="card mb-3">
           <img src="/assets/images/adani.png" style="height: 100%; width: 100%" class="activator" />
           <div class="card-body">              
