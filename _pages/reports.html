@@ -12,17 +12,13 @@ layout: default
             <h6>Filter reports by:</h6>
         </div>
         <div class="col">
-            <fieldset data-filter-group="" class="">
-            <button class="btn btn-primary " type="reset">Reset</button>
-                <select class="form-select" multiple id="filter-fund">
+            <select id="filter-fund">
                     <option value="">All Funds</option>
                     <option value=".Carl-Icahn">Carl Icahn</option>
-                </select>
-            </fieldset>
+            </select>
         </div>
         <div class="col">
-            <fieldset data-filter-group="" class="">
-                <select class="form-select" multiple id="filter-sector">
+            <select id="filter-sector">
                 <option value="">All Industry Sectors</option>
                 <option value=".Consumer">Consumer</option>
                 <option value=".Financials">Financials</option>
@@ -32,11 +28,10 @@ layout: default
                 <option value=".Natural-Resources">Natural Resources</option>
                 <option value=".Real-Estate">Real Estate</option>
                 <option value=".TMT">TMT</option>
-                </select>
-            </fieldset>
+            </select>
         </div>
         <div class="col">
-            <select class="form-select" multiple id="filter-date">
+            <select id="filter-date">
                 <option value="">All Presentation Years</option>
                 <option value=".year-2023">2023</option>
                 <option value=".year-2022">2022</option>
@@ -63,8 +58,7 @@ layout: default
             </select>
         </div>
         <div class="col">
-            <button class="btn btn-primary btn-sm" type="reset">Reset</button>
-            
+            <button class="btn btn-primary btn-sm" type="reset">Reset</button>            
         </div>
     </div>
 </form>
