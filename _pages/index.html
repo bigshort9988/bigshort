@@ -2,7 +2,98 @@
 layout: default
 ---
 <h1>Short Activist Reports</h1>
-    <div class="container">
+
+<p>Short sellers are an enigmatic breed in the financial world, who operate in the shadows of the stock market. They bet against publicly traded companies by selling shares they don't own, with the aim of buying them back at a lower price. These contrarian investors publish research reports to support their positions and share their findings with the public, offering a unique perspective on the companies they short. In these reports, short sellers detail their findings on a company's financial health, operations, and management, providing a glimpse into the inner workings of the companies and their potential red flags. Our website serves as a hub for these reports, offering a comprehensive resource for anyone looking to gain a deeper understanding of the art of short selling and its impact on the financial markets.</p>
+
+<p>In the stock market, short sellers are the jesters to sell-side analysts' court jesters. While sell-side analysts are busy trying to flatter the companies they cover and maintain positive relationships, short sellers are busy digging through the dirt and looking for any skeletons in the closet.</p>
+
+<p>In many ways, the nature of the game lends itself to a higher level of scrutiny and skepticism from short sellers. They aren't afraid to call a company's bluff and publish research highlighting their findings, which can offer investors a much-needed dose of reality amidst the sea of cheerleading from sell-side analysts. As such, short seller research can provide a valuable check and balance on the information being put out into the market.</p>
+
+<p>So, is short seller research always better than sell-side research? Of course not. But in many cases, it can offer a unique and valuable perspective that's worth considering as part of your overall research process.</p>
+
+<!-- Add the filter controls -->
+<div class="filter-controls">
+  <label>Filter by:</label>
+  <select id="filter-attribute">
+    <option value="">All</option>
+    <option value="category1">Category 1</option>
+    <option value="category2">Category 2</option>
+    <option value="category3">Category 3</option>
+  </select>
+  <button id="filter-button">Filter</button>
+</div>
+
+<form class="controls grid filter-grid">
+  <h4>Filter reports by:</h4>
+  <fieldset data-filter-group="" class="">
+    <select id="filter-fund" class="select-filter">
+      <option value="">All Funds</option>
+      <option value=".Carl-Icahn">Carl Icahn</option>
+      <option value=".Corvex">Corvex</option>
+      <option value=".Elliott-Management">Elliott Management</option>
+      <option value=".Engaged-Capital">Engaged Capital</option>
+      <option value=".Glenview-Capital">Glenview Capital</option>
+      <option value=".Greenlight-Capital">Greenlight Capital</option>
+      <option value=".JANA-Partners">JANA Partners</option>
+      <option value=".Marcato">Marcato</option>
+      <option value=".Pershing-Square">Pershing Square</option>
+      <option value=".Relational-Investors">Relational Investors</option>
+      <option value=".Sandell">Sandell</option>
+      <option value=".SpringOwl">SpringOwl</option>
+      <option value=".Starboard-Value">Starboard Value</option>
+      <option value=".Third-Point">Third Point</option>
+      <option value=".TPG-Axon">TPG-Axon</option>
+      <option value=".Trian">Trian</option>
+      <option value=".ValueAct">ValueAct</option>
+    </select>
+  </fieldset>
+
+  <fieldset data-filter-group="" class="">
+    <select id="filter-sector" class="select-filter">
+      <option value="">All Industry Sectors</option>
+      <option value=".Consumer">Consumer</option>
+      <option value=".Financials">Financials</option>
+      <option value=".General">General</option>
+      <option value=".Healthcare">Healthcare</option>
+      <option value=".Industrials">Industrials</option>
+      <option value=".Multiple">Multiple</option>
+      <option value=".Natural-Resources">Natural Resources</option>
+      <option value=".Real-Estate">Real Estate</option>
+      <option value=".TMT">TMT</option>
+    </select>
+  </fieldset>
+
+  <fieldset data-filter-group="" class="">
+    <select id="filter-date" class="select-filter">
+      <option value="">All Presentation Years</option>
+      <option value=".year-2023">2023</option>
+      <option value=".year-2022">2022</option>
+      <option value=".year-2021">2021</option>
+      <option value=".year-2020">2020</option>
+      <option value=".year-2019">2019</option>
+      <option value=".year-2018">2018</option>
+      <option value=".year-2017">2017</option>
+      <option value=".year-2016">2016</option>
+      <option value=".year-2015">2015</option>
+      <option value=".year-2014">2014</option>
+      <option value=".year-2013">2013</option>
+      <option value=".year-2012">2012</option>
+      <option value=".year-2011">2011</option>
+      <option value=".year-2010">2010</option>
+      <option value=".year-2009">2009</option>
+      <option value=".year-2008">2008</option>
+      <option value=".year-2007">2007</option>
+      <option value=".year-2006">2006</option>
+      <option value=".year-2005">2005</option>
+      <option value=".year-2004">2004</option>
+      <option value=".year-2003">2003</option>
+      <option value=".year-2002">2002</option>
+    </select>
+  </fieldset>
+  <button type="reset" class="hidden button control control-text">Reset</button>
+</form>
+<!------------- End Filtering ------------------>
+  <div class="container">
       <div class="row">
 
         <div class="card mb-3">
@@ -61,76 +152,7 @@ layout: default
           </div>
         </div>
         <!------------- Filtering ------------------>
-        <form class="controls grid filter-grid">
-          <h4>Filter reports by:</h4>
-          <fieldset data-filter-group="" class="">
-            <select id="filter-fund" class="select-filter">
-              <option value="">All Funds</option>
-              <option value=".Carl-Icahn">Carl Icahn</option>
-              <option value=".Corvex">Corvex</option>
-              <option value=".Elliott-Management">Elliott Management</option>
-              <option value=".Engaged-Capital">Engaged Capital</option>
-              <option value=".Glenview-Capital">Glenview Capital</option>
-              <option value=".Greenlight-Capital">Greenlight Capital</option>
-              <option value=".JANA-Partners">JANA Partners</option>
-              <option value=".Marcato">Marcato</option>
-              <option value=".Pershing-Square">Pershing Square</option>
-              <option value=".Relational-Investors">Relational Investors</option>
-              <option value=".Sandell">Sandell</option>
-              <option value=".SpringOwl">SpringOwl</option>
-              <option value=".Starboard-Value">Starboard Value</option>
-              <option value=".Third-Point">Third Point</option>
-              <option value=".TPG-Axon">TPG-Axon</option>
-              <option value=".Trian">Trian</option>
-              <option value=".ValueAct">ValueAct</option>
-            </select>
-          </fieldset>
-
-          <fieldset data-filter-group="" class="">
-            <select id="filter-sector" class="select-filter">
-              <option value="">All Industry Sectors</option>
-              <option value=".Consumer">Consumer</option>
-              <option value=".Financials">Financials</option>
-              <option value=".General">General</option>
-              <option value=".Healthcare">Healthcare</option>
-              <option value=".Industrials">Industrials</option>
-              <option value=".Multiple">Multiple</option>
-              <option value=".Natural-Resources">Natural Resources</option>
-              <option value=".Real-Estate">Real Estate</option>
-              <option value=".TMT">TMT</option>
-            </select>
-          </fieldset>
-
-          <fieldset data-filter-group="" class="">
-            <select id="filter-date" class="select-filter">
-              <option value="">All Presentation Years</option>
-              <option value=".year-2023">2023</option>
-              <option value=".year-2022">2022</option>
-              <option value=".year-2021">2021</option>
-              <option value=".year-2020">2020</option>
-              <option value=".year-2019">2019</option>
-              <option value=".year-2018">2018</option>
-              <option value=".year-2017">2017</option>
-              <option value=".year-2016">2016</option>
-              <option value=".year-2015">2015</option>
-              <option value=".year-2014">2014</option>
-              <option value=".year-2013">2013</option>
-              <option value=".year-2012">2012</option>
-              <option value=".year-2011">2011</option>
-              <option value=".year-2010">2010</option>
-              <option value=".year-2009">2009</option>
-              <option value=".year-2008">2008</option>
-              <option value=".year-2007">2007</option>
-              <option value=".year-2006">2006</option>
-              <option value=".year-2005">2005</option>
-              <option value=".year-2004">2004</option>
-              <option value=".year-2003">2003</option>
-              <option value=".year-2002">2002</option>
-            </select>
-          </fieldset>
-          <button type="reset" class="hidden button control control-text">Reset</button>
-        </form>
-        <!------------- End Filtering ------------------>
+        
 
         <!------------------ Presentation Grid Item-------------->
         <div class="grid presentation-grid hf-presentation-grid">
